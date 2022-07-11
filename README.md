@@ -54,7 +54,7 @@ def create_spend_chart(catergories):
             amount = item["amount"]
             if amount < 0:
                 total += amount
-                cat_total += abs(amount)
+                cat_total += abs(amount)  #yea
         caty[cat.name] = cat_total
         
     for key, val in caty.items():
